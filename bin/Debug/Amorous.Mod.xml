@@ -1,0 +1,442 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Amorous.Mod</name>
+    </assembly>
+    <members>
+        <member name="T:Amorous.Mod.FakeGameInstance">
+            <summary>
+            Haha fuck you no documentation here
+            </summary>
+        </member>
+        <member name="M:Amorous.Mod.FakeGameInstance.#ctor(Amorous.Mod.ModLoader)">
+            <summary>
+            Okay, maybe a little documentation. This class is used solely to hack around making sure that modded cutscenes load modded NPCs
+            </summary>
+            <param name="loader"></param>
+        </member>
+        <member name="P:Amorous.Mod.FakeGameInstance._UYglTfDrqAD33oAMLNkhpfrF1Bf">
+            <summary>
+            However I won't explain what any of the obfuscated names mean, because I already forgot
+            </summary>
+        </member>
+        <member name="T:Amorous.Mod.Helpers.InputHelper">
+            <summary>
+            Input stuff
+            </summary>
+        </member>
+        <member name="M:Amorous.Mod.Helpers.InputHelper.IsReleased(Microsoft.Xna.Framework.Input.Keys)">
+            <summary>
+            Checks if key that was previously pressed is now released
+            </summary>
+            <param name="key">Key to check</param>
+            <returns>Value</returns>
+        </member>
+        <member name="M:Amorous.Mod.Helpers.InputHelper.IsReleased(_BX5waHFovNaRqrCMROUmndxdY7j)">
+            <summary>
+            Checks if mouse button that was previously pressed is now released
+            </summary>
+            <param name="button">Mouse button to check</param>
+            <returns>Value</returns>
+        </member>
+        <member name="M:Amorous.Mod.Helpers.InputHelper.IsDown(_BX5waHFovNaRqrCMROUmndxdY7j)">
+            <summary>
+            Checks if mouse button is down
+            </summary>
+            <param name="button">Mouse button to check</param>
+            <returns>Value</returns>
+        </member>
+        <member name="M:Amorous.Mod.Helpers.InputHelper.IsDown(Microsoft.Xna.Framework.Input.Keys)">
+            <summary>
+            Checks if key is pressed down
+            </summary>
+            <param name="key">Key to check</param>
+            <returns>Value</returns>
+        </member>
+        <member name="M:Amorous.Mod.Helpers.InputHelper.WasPressed(_BX5waHFovNaRqrCMROUmndxdY7j)">
+            <summary>
+            Checks if mouse button that was previously up is now pressed
+            </summary>
+            <param name="button">Mouse button to check</param>
+            <returns>Value</returns>
+        </member>
+        <member name="M:Amorous.Mod.Helpers.InputHelper.WasPressed(Microsoft.Xna.Framework.Input.Keys)">
+            <summary>
+            Checks if key that was previously up is now pressed
+            </summary>
+            <param name="key">Key to check</param>
+            <returns>Value</returns>
+        </member>
+        <member name="M:Amorous.Mod.Helpers.InputHelper.GetPressedKeys">
+            <summary>
+            Gets an array of all pressed keys
+            </summary>
+            <returns>Value</returns>
+        </member>
+        <member name="T:Amorous.Mod.Helpers.PlayerHelper">
+            <summary>
+            Player helper
+            </summary>
+        </member>
+        <member name="M:Amorous.Mod.Helpers.PlayerHelper.GetPlayerFlag(System.String)">
+            <summary>
+            Gets a player flag, which can be set manually or through cutscenes (quests)
+            </summary>
+            <param name="flag">Flag to get</param>
+            <returns>Value</returns>
+        </member>
+        <member name="M:Amorous.Mod.Helpers.PlayerHelper.SetPlayerFlag(System.String,System.Boolean)">
+            <summary>
+            Sets a player flag which is useful for tracking progression
+            </summary>
+            <param name="flag">Flag to set</param>
+            <param name="value">Value to set the flag to</param>
+        </member>
+        <member name="T:Amorous.Mod.Helpers.LogHelper">
+            <summary>
+            Log
+            </summary>
+        </member>
+        <member name="M:Amorous.Mod.Helpers.LogHelper.LogInfo(System.String)">
+            <summary>
+            Logs as information
+            </summary>
+            <param name="message">message</param>
+        </member>
+        <member name="M:Amorous.Mod.Helpers.LogHelper.LogWarn(System.String)">
+            <summary>
+            Logs as warning
+            </summary>
+            <param name="message">message</param>
+        </member>
+        <member name="M:Amorous.Mod.Helpers.LogHelper.LogError(System.String)">
+            <summary>
+            Logs as error
+            </summary>
+            <param name="message">message</param>
+        </member>
+        <member name="T:Amorous.Mod.IModBase">
+            <summary>
+            Implement this interface so your mod can be loaded by the mod loader
+            </summary>
+        </member>
+        <member name="M:Amorous.Mod.IModBase.Initialize">
+            <summary>
+            Called when the game starts, used for initialization (duh)
+            </summary>
+        </member>
+        <member name="M:Amorous.Mod.IModBase.LoadContent">
+            <summary>
+            Load
+            </summary>
+        </member>
+        <member name="M:Amorous.Mod.IModBase.UnloadContent">
+            <summary>
+            Unload
+            </summary>
+        </member>
+        <member name="M:Amorous.Mod.IModBase.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Called on each frame
+            </summary>
+            <param name="gameTime"></param>
+        </member>
+        <member name="M:Amorous.Mod.IModBase.Draw(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Called on each frame but, for drawing
+            </summary>
+            <param name="gameTime"></param>
+        </member>
+        <member name="T:Amorous.Mod.ModContentManager">
+            <summary>
+            Content manager pointing to Content-Mods
+            </summary>
+        </member>
+        <member name="M:Amorous.Mod.ModContentManager.#ctor(System.IServiceProvider,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="serviceProvider">Service Provider</param>
+            <param name="rootDirectory">Root directory except fuck you because it's set manually anyway</param>
+        </member>
+        <member name="M:Amorous.Mod.ModContentManager.OpenStream(System.String)">
+            <summary>
+            Overriding OpenStream function to decompress any and all assets that are being loaded
+            </summary>
+            <remarks>
+            May or may not throw an exception if the file isn't actually compressed
+            </remarks>
+            <param name="assetName">Name of the asset to load</param>
+            <returns>Stream</returns>
+        </member>
+        <member name="T:Amorous.Mod.ModLoader">
+            <summary>
+            Yup, it's real
+            </summary>
+        </member>
+        <member name="P:Amorous.Mod.ModLoader.GameInstance">
+            <summary>
+            Amorous game instance, lots of obfuscated stuff, might release deobfuscated version if anyone finds this text
+            </summary>
+        </member>
+        <member name="P:Amorous.Mod.ModLoader.ContentManager">
+            <summary>
+            Vanilla content manager, points to Content-Release
+            </summary>
+        </member>
+        <member name="P:Amorous.Mod.ModLoader.ModContentManager">
+            <summary>
+            Mod content manager, points to Content-Mods
+            </summary>
+        </member>
+        <member name="P:Amorous.Mod.ModLoader.CurrentScene">
+            <summary>
+            Gets the current scene
+            </summary>
+            <example>
+            In order to add an NPC to the current scene you would do something like
+            <code>
+            if (ModLoader.Instance.CurrentScene is ClubUpstairsScene clubUpstairsScene)
+            {
+                var npcLayer = GetNPCLayer(clubUpstairsScene, nameof(NPC));
+                if (npcLayer == null)
+                {
+                    var npc = ModLoader.Instance.AddNPC&lt;NPC&gt;(_bRA4WJRW7AfFyNcbS8anXPvTZZc.Background);
+                    if (npc != null)
+                    {
+                        npc.Click = NPCClickAction;
+                        npc.X = 1000f;
+                        npc.Y = 125f;
+                    }
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Amorous.Mod.ModLoader.GetNPCLayer(_FBIT8ioambRx7Q6ZCZCjclhjFpU,System.String)">
+            <summary>
+            Gets an NPC layer from specified scene 
+            </summary>
+            <param name="scene">Scene</param>
+            <param name="npcName">NPC name</param>
+            <returns>NPC layer</returns>
+        </member>
+        <member name="F:Amorous.Mod.ModLoader.Game">
+            <summary>
+            Game
+            </summary>
+        </member>
+        <member name="F:Amorous.Mod.ModLoader.Instance">
+            <summary>
+            Instance of this class, there can only be one
+            </summary>
+        </member>
+        <member name="M:Amorous.Mod.ModLoader.#ctor(Microsoft.Xna.Framework.Game,_ReSMQinwfLqHErTI2lafWxQJw9B)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="game">FNA Game</param>
+            <param name="gameInstance">Amorous game instance</param>
+        </member>
+        <member name="M:Amorous.Mod.ModLoader.Initialize">
+            <summary>
+            Initialize
+            </summary>
+        </member>
+        <member name="M:Amorous.Mod.ModLoader.LoadContent">
+            <summary>
+            Load
+            </summary>
+        </member>
+        <member name="M:Amorous.Mod.ModLoader.UnloadContent">
+            <summary>
+            Unload
+            </summary>
+        </member>
+        <member name="M:Amorous.Mod.ModLoader.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Update
+            </summary>
+            <param name="gameTime">Time</param>
+        </member>
+        <member name="M:Amorous.Mod.ModLoader.Draw(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Draw
+            </summary>
+            <param name="gameTime">Time</param>
+        </member>
+        <member name="M:Amorous.Mod.ModLoader.LoadScene(System.String)">
+            <summary>
+            Loads a cutscene (Data/Quests) use filename without extension
+            </summary>
+            <param name="name">Name of the cutscene (quest) to load</param>
+        </member>
+        <member name="M:Amorous.Mod.ModLoader.AddNPC``1(_bRA4WJRW7AfFyNcbS8anXPvTZZc)">
+            <summary>
+            Adds an NPC to current scene
+            </summary>
+            <typeparam name="T">NPC Type</typeparam>
+            <param name="layerType">Which layer to put the NPC on</param>
+            <returns>NPC instance</returns>
+        </member>
+        <member name="M:Amorous.Mod.ModLoader.AddNPC(System.String,_bRA4WJRW7AfFyNcbS8anXPvTZZc,System.Type)">
+            <summary>
+            Adds an NPC to current scene
+            </summary>
+            <param name="name">NPC Name</param>
+            <param name="layerType">Which layer to put the NPC on</param>
+            <param name="npcType">Used when creating a modded NPC</param>
+            <returns>NPC Instance</returns>
+        </member>
+        <member name="T:Amorous.Mod.NPC.ModLayerNPC`3">
+            <summary>
+            Use this for all your NPC needs
+            </summary>
+            <typeparam name="THead">Head types</typeparam>
+            <typeparam name="TPose">Body pose types</typeparam>
+            <typeparam name="TClothes">Clothes types</typeparam>
+        </member>
+        <member name="P:Amorous.Mod.NPC.ModLayerNPC`3.Click">
+            <summary>
+            Called when the NPC is clicked
+            </summary>
+        </member>
+        <member name="P:Amorous.Mod.NPC.ModLayerNPC`3.X">
+            <summary>
+            X position
+            </summary>
+        </member>
+        <member name="P:Amorous.Mod.NPC.ModLayerNPC`3.Y">
+            <summary>
+            Y position
+            </summary>
+        </member>
+        <member name="P:Amorous.Mod.NPC.ModLayerNPC`3.Flip">
+            <summary>
+            Whether or not should the NPC be flipped
+            </summary>
+        </member>
+        <member name="P:Amorous.Mod.NPC.ModLayerNPC`3.Size">
+            <summary>
+            Scale
+            </summary>
+        </member>
+        <member name="P:Amorous.Mod.NPC.ModLayerNPC`3.HitboxWidth">
+            <summary>
+            Hitbox width, needed for clicking to work. Usually should be the same as the texture width.
+            </summary>
+        </member>
+        <member name="P:Amorous.Mod.NPC.ModLayerNPC`3.HitboxHeight">
+            <summary>
+            Hitbox height, needed for clicking to work. Usually should be the same as the texture height.
+            </summary>
+        </member>
+        <member name="P:Amorous.Mod.NPC.ModLayerNPC`3.Selected">
+            <summary>
+            True when cursor is hovering over the NPC
+            </summary>
+        </member>
+        <member name="M:Amorous.Mod.NPC.ModLayerNPC`3.#ctor(_ReSMQinwfLqHErTI2lafWxQJw9B,Amorous.Mod.ModLoader,System.String,System.Single)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="gameInstance">Amorous game instance</param>
+            <param name="modLoader">Mod loader instance</param>
+            <param name="assetPath">Base path to NPC textures</param>
+            <param name="scale">Size</param>
+        </member>
+        <member name="M:Amorous.Mod.NPC.ModLayerNPC`3.AddHead(`0,System.String[])">
+            <summary>
+            Adds a head texture corresponding to head type enum
+            </summary>
+            <param name="headType">Head type</param>
+            <param name="assetNames">Asset names for all textures for the corresponding head type</param>
+            <returns>Asset</returns>
+        </member>
+        <member name="M:Amorous.Mod.NPC.ModLayerNPC`3.AddBody(`1,System.String[])">
+            <summary>
+            Adds a body texture corresponding to body pose type enum
+            </summary>
+            <param name="poseType">Body pose type</param>
+            <param name="assetNames">Asset names for all textures for the corresponding body pose type</param>
+            <returns>Asset</returns>
+        </member>
+        <member name="M:Amorous.Mod.NPC.ModLayerNPC`3.AddClothes(`1,`2,System.String[])">
+            <summary>
+            Adds clothes texture corresponding to body pose type and clothes type enum
+            </summary>
+            <param name="poseType">Body pose type</param>
+            <param name="clothesType">Clothes type</param>
+            <param name="assetNames">Asset names for all textures for the corresponding body pose + clothes type</param>
+            <returns>Asset</returns>
+        </member>
+        <member name="M:Amorous.Mod.NPC.ModLayerNPC`3.SetHead(`0)">
+            <summary>
+            Sets a head type to use
+            </summary>
+            <param name="headType">Head type to use</param>
+        </member>
+        <member name="M:Amorous.Mod.NPC.ModLayerNPC`3.SetBody(`1)">
+            <summary>
+            Sets a body pose type to use
+            </summary>
+            <param name="poseType">Body pose type to use</param>
+        </member>
+        <member name="M:Amorous.Mod.NPC.ModLayerNPC`3.SetClothes(`2[])">
+            <summary>
+            Sets clothes type to use
+            </summary>
+            <param name="clothesTypes">Clothes types to use</param>
+        </member>
+        <member name="M:Amorous.Mod.NPC.ModLayerNPC`3.AddAttachment(Microsoft.Xna.Framework.Content.ContentManager,System.String)">
+            <summary>
+            Adds an attachment to the NPC
+            </summary>
+            <param name="contentManager_0">Content manager used for loading the textures</param>
+            <param name="path">Path to the texture</param>
+        </member>
+        <member name="M:Amorous.Mod.NPC.ModLayerNPC`3._obvu1L6KrxGqH1z2XacOoFxfneg(Amorous.Engine.NPC.NPCLocation)">
+            <summary>
+            Method that gets called when NPC location on screen is changed during a cutscene (left, middle, right)
+            </summary>
+            <example>
+            Use a switch statement to change values for specific locations:
+            <code>
+            public override void _obvu1L6KrxGqH1z2XacOoFxfneg(NPCLocation location)
+            {
+                base._obvu1L6KrxGqH1z2XacOoFxfneg(location);
+                switch (location)
+                {
+                    case NPCLocation.Middle:
+                        Size = 1f;
+                        Flip = true;
+                        X = 240f;
+                        Y = 50f;
+                        return;
+                    case NPCLocation.Left:
+                        Size = 0.85f;
+                        Flip = true;
+                        X = -300f;
+                        Y = 50f;
+                        return;
+                    case NPCLocation.Right:
+                        Size = 0.85f;
+                        Flip = false;
+                        X = 990f;
+                        Y = 50f;
+                        return;
+                    default:
+                        return;
+                }
+            }
+            </code>
+            </example>
+            <param name="location">NPC location</param>
+        </member>
+        <member name="M:Amorous.Mod.NPC.ModLayerNPC`3._pedFGoqAIjRhB9Jo0miZgSOTbKs">
+            <summary>
+            Initialization method
+            </summary>
+        </member>
+    </members>
+</doc>
