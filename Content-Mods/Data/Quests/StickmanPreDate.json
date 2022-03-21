@@ -679,7 +679,7 @@
 				},
 				{
 					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
-					"Text": "Anyway, that's as much information as I can think of, so if you have more questions, just ask me in the place where I uploaded this mod, or just uhh, add me on Discord I guess. (araghon007#4244, bonus points if you figure out what the discriminator means)",
+					"Text": "Anyway, that's as much information as I can think of, so if you have more questions, just ask me in the place where I uploaded this mod, or just uhh, add me on Discord I guess. (araghon007#4244 for original dev or CarThax#0273 for the one who ported it)",
 					"Title": "Stickman",
 					"Color": {
 						"B": 92,
