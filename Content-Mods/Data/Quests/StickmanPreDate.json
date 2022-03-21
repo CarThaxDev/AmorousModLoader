@@ -1,0 +1,705 @@
+{
+	"Name": "StickmanPreDate",
+	"Stages": [
+		{
+			"Stage": 10,
+			"StartID": 1,
+			"Events": [
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.FadeOutEventData, Amorous.Engine",
+					"ID": 1,
+					"NextID": 2,
+					"DebugID": 1
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.SwitchToSceneEventData, Amorous.Engine",
+					"SceneName": "ClubUpstairsStaffRoomScene",
+					"ID": 2,
+					"NextID": 3,
+					"DebugID": 2
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.SpawnNPCEventData, Amorous.Engine",
+					"NPC": "Stickman",
+					"Location": "Middle",
+					"Layer": "Foreground",
+					"Head": "Default",
+					"Pose": "Default",
+					"ID": 3,
+					"NextID": 4,
+					"DebugID": 3
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.FadeInEventData, Amorous.Engine",
+					"ID": 4,
+					"NextID": 5,
+					"DebugID": 4
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "Hey man, glad you found me.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 5,
+					"NextID": 6,
+					"DebugID": 5
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "I'm gonna be your tour for the world of Amorous modding. Do you want to learn more or do you want to figure stuff out on your own?\r\nA word of warning though, the code is still pretty much work in progress.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 6,
+					"NextID": 7,
+					"DebugID": 6
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.DialogueChoiceEventData, Amorous.Engine",
+					"Choices": [
+						{
+							"Text": "Lead the way.",
+							"NextID": 16
+						},
+						{
+							"Text": "I'm good, thanks.",
+							"NextID": 8
+						}
+					],
+					"ID": 7,
+					"NextID": 0,
+					"DebugID": 7
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "I'm good, thanks. I think I can navigate myself through your spaghetti code.",
+					"Title": "%playername%",
+					"Color": {
+						"B": 255,
+						"G": 255,
+						"R": 255,
+						"A": 255
+					},
+					"ID": 8,
+					"NextID": 9,
+					"DebugID": 8
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "Well, don't say I didn't warn you.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 9,
+					"NextID": 10,
+					"DebugID": 9
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.SetFlagEventData, Amorous.Engine",
+					"Flag": "araghon007.AmorousTestMod.StickmanHidden",
+					"Value": true,
+					"ID": 10,
+					"NextID": 11,
+					"DebugID": 10
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.SpawnNPCEventData, Amorous.Engine",
+					"NPC": "Stickman",
+					"Location": "Middle",
+					"Layer": "Foreground",
+					"Head": "Angry",
+					"Pose": "Default",
+					"ID": 11,
+					"NextID": 12,
+					"DebugID": 11
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "And don't look at me like that, I was drawn in a hurry!",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 12,
+					"NextID": 13,
+					"DebugID": 12
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.FadeOutEventData, Amorous.Engine",
+					"ID": 13,
+					"NextID": 14,
+					"DebugID": 13
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.SwitchToSceneEventData, Amorous.Engine",
+					"SceneName": "ClubUpstairsScene",
+					"ID": 14,
+					"NextID": 15,
+					"DebugID": 14
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.FadeInEventData, Amorous.Engine",
+					"ID": 15,
+					"NextID": 0,
+					"DebugID": 15
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "Alright, first things first, this mod adds a thing I call \"Devmode\"",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 16,
+					"NextID": 17,
+					"DebugID": 16
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "You can press Ctrl+Tab to enable it. Do so now. \r\nNote: whenever I talk about special keys, I refer to the ones on the left side of your keyboard as I was too lazy to check for both keys.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 17,
+					"NextID": 18,
+					"DebugID": 17
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.ConditionalBranchEventData, Amorous.Engine",
+					"Flag": "araghon007.AmorousTestMod.Devmode",
+					"TrueID": 24,
+					"FalseID": 19,
+					"ID": 18,
+					"NextID": 0,
+					"DebugID": 18
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.SpawnNPCEventData, Amorous.Engine",
+					"NPC": "Stickman",
+					"Location": "Middle",
+					"Layer": "Foreground",
+					"Head": "Angry",
+					"Pose": "Default",
+					"ID": 19,
+					"NextID": 20,
+					"DebugID": 19
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "You're now stuck in purgatory until you enable Devmode",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 20,
+					"NextID": 21,
+					"DebugID": 20
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.ConditionalBranchEventData, Amorous.Engine",
+					"Flag": "araghon007.AmorousTestMod.Devmode",
+					"TrueID": 22,
+					"FalseID": 20,
+					"ID": 21,
+					"NextID": 0,
+					"DebugID": 21
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.SpawnNPCEventData, Amorous.Engine",
+					"NPC": "Stickman",
+					"Location": "Middle",
+					"Layer": "Foreground",
+					"Head": "Default",
+					"Pose": "Default",
+					"ID": 22,
+					"NextID": 23,
+					"DebugID": 22
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "That wasn't so hard now, was it?",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 23,
+					"NextID": 25,
+					"DebugID": 23
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "Good, you're learning. Now onto the next step.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 24,
+					"NextID": 25,
+					"DebugID": 24
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "You can hold Ctrl and right mouse button to drag stuff around. Do so now.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 25,
+					"NextID": 26,
+					"DebugID": 25
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "Notice that the X and Y values change as you move stuff. You can use this later to find precise positions of where you want to place your stuff.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 26,
+					"NextID": 27,
+					"DebugID": 26
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "You can also change size of objects by holding Ctrl and using your scroll wheel. You can also take bigger or smaller steps by holding Shift or Alt as well.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 27,
+					"NextID": 28,
+					"DebugID": 27
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "Alright, I'm going to reset the scene now.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 28,
+					"NextID": 29,
+					"DebugID": 28
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.SwitchToSceneEventData, Amorous.Engine",
+					"SceneName": "ClubUpstairsStaffRoomScene",
+					"ID": 29,
+					"NextID": 30,
+					"DebugID": 29
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.SpawnNPCEventData, Amorous.Engine",
+					"NPC": "Stickman",
+					"Location": "Middle",
+					"Layer": "Foreground",
+					"Head": "Default",
+					"Pose": "Default",
+					"ID": 30,
+					"NextID": 31,
+					"DebugID": 30
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "Much better. Now, do you want to hear me rant about the technical side of Amorous?",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 31,
+					"NextID": 32,
+					"DebugID": 31
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.DialogueChoiceEventData, Amorous.Engine",
+					"Choices": [
+						{
+							"Text": "Rant away!",
+							"NextID": 33
+						},
+						{
+							"Text": "I'm just here to learn about modding.",
+							"NextID": 46
+						}
+					],
+					"ID": 32,
+					"NextID": 0,
+					"DebugID": 32
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "Sure, I would love to hear you rant about something as amazing as the Amorous codebase. I bet it's very interesting!",
+					"Title": "%playername%",
+					"Color": {
+						"B": 255,
+						"G": 255,
+						"R": 255,
+						"A": 255
+					},
+					"ID": 33,
+					"NextID": 34,
+					"DebugID": 33
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "I can sense your sarcasm, but you chose this option anyway so now I have to do it.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 34,
+					"NextID": 35,
+					"DebugID": 34
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "Alright, first things first. Amorous was originally written in Unity, but the developers quickly switched to a custom engine written using FNA, which is basically XNA but wotter, er.. berse?",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 35,
+					"NextID": 36,
+					"DebugID": 35
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "Doesn't matter, the classes are still all over the place, split between Amorous.Game and Amorous.Engine in seemingly no comprehensible way.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 36,
+					"NextID": 37,
+					"DebugID": 36
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.SpawnNPCEventData, Amorous.Engine",
+					"NPC": "Stickman",
+					"Location": "Middle",
+					"Layer": "Foreground",
+					"Head": "Angry",
+					"Pose": "Default",
+					"ID": 37,
+					"NextID": 38,
+					"DebugID": 37
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "Anyway, the code is heavily obfuscated and protected. By Confuserex of all things. I mean, it did make sense back when the releases were Patreon only, but why the fuck would they use that in full release?",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 38,
+					"NextID": 39,
+					"DebugID": 38
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.SpawnNPCEventData, Amorous.Engine",
+					"NPC": "Stickman",
+					"Location": "Middle",
+					"Layer": "Foreground",
+					"Head": "Default",
+					"Pose": "Default",
+					"ID": 39,
+					"NextID": 40,
+					"DebugID": 39
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "But I took a look under the hood anyway, and saw the depths of hell itself. I also found out that mod support was planned at some point, since there exists a function to load custom cutscenes, from the folder this very cutscene is in!",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 40,
+					"NextID": 41,
+					"DebugID": 40
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.SpawnNPCEventData, Amorous.Engine",
+					"NPC": "Stickman",
+					"Location": "Middle",
+					"Layer": "Foreground",
+					"Head": "Angry",
+					"Pose": "Default",
+					"ID": 41,
+					"NextID": 42,
+					"DebugID": 41
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "Of course, the code was never actually made with modding in mind, so I have to rely heavily on reflection, so don't you dare complain about performance.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 42,
+					"NextID": 43,
+					"DebugID": 42
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "Oh, and speaking of performance, the dev team thought the default XNB compression wasn't good enough for them, so every single asset in Content-Release is compressed using gzip. So if you're wondering why there's such a long pause between switching scenes, blame compression.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 43,
+					"NextID": 44,
+					"DebugID": 43
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.SpawnNPCEventData, Amorous.Engine",
+					"NPC": "Stickman",
+					"Location": "Middle",
+					"Layer": "Foreground",
+					"Head": "Default",
+					"Pose": "Default",
+					"ID": 44,
+					"NextID": 45,
+					"DebugID": 44
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "But anyway, now onto some useful information.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 45,
+					"NextID": 47,
+					"DebugID": 45
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "Alright, you do you. Here's some useful information then.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 46,
+					"NextID": 47,
+					"DebugID": 46
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "If you know how to code in C#, you can use the XML documentation packaged alongside Amorous.Mod.dll. Just add it as a reference and start figuring stuff out. You can also take a look at the code this mod uses by using some .NET dissassembly software.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 47,
+					"NextID": 48,
+					"DebugID": 47
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "I'll give you a hint though, you need to implement IModBase. Make sure to also reference all DLLs you need such as Amorous.Game.dll and Amorous.Engine.dll, plus some libraries the game uses, most importantly FNA. Once you build your mod, just put it inside Content-Mods.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 48,
+					"NextID": 49,
+					"DebugID": 48
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "If you don't know how to code in C#, you're pretty much screwed. I might add a way to make mods for the programming chalenged amongst you, but for now you can at least mess around with AmorousEditor.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 49,
+					"NextID": 50,
+					"DebugID": 49
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "If you want to learn how to make custom cutscenes (quests) look into Content-Mods/Data/Quests/StickmanPreDate.json to find out how this was written.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 50,
+					"NextID": 51,
+					"DebugID": 50
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.SpawnNPCEventData, Amorous.Engine",
+					"NPC": "Stickman",
+					"Location": "Middle",
+					"Layer": "Foreground",
+					"Head": "Angry",
+					"Pose": "Default",
+					"ID": 51,
+					"NextID": 52,
+					"DebugID": 51
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "And no, \"PreDate\" doesn't mean you can date me. I was just too lazy to change the name properly.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 52,
+					"NextID": 53,
+					"DebugID": 52
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "Perv.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 53,
+					"NextID": 54,
+					"DebugID": 53
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.SpawnNPCEventData, Amorous.Engine",
+					"NPC": "Stickman",
+					"Location": "Middle",
+					"Layer": "Foreground",
+					"Head": "Default",
+					"Pose": "Default",
+					"ID": 54,
+					"NextID": 55,
+					"DebugID": 54
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "I'm also planning to add support for creating and editing Spine scenes for custom animation into AmorousEditor, but that will take a while to code. For now, if you have an actual Spine editor, you might be able to load in the .json scenes, however you might have to change the version value inside the json in order for it to load.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 55,
+					"NextID": 56,
+					"DebugID": 55
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "Anyway, that's as much information as I can think of, so if you have more questions, just ask me in the place where I uploaded this mod, or just uhh, add me on Discord I guess. (araghon007#4244, bonus points if you figure out what the discriminator means)",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 56,
+					"NextID": 57,
+					"DebugID": 56
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.SetFlagEventData, Amorous.Engine",
+					"Flag": "araghon007.AmorousTestMod.StickmanTalked",
+					"Value": true,
+					"ID": 57,
+					"NextID": 13,
+					"DebugID": 57
+				},
+			]
+		}
+	]
+}

@@ -1,0 +1,211 @@
+{
+	"Name": "StickmanPreDate",
+	"Stages": [
+		{
+			"Stage": 10,
+			"StartID": 1,
+			"Events": [
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.ConditionalBranchEventData, Amorous.Engine",
+					"Flag": "araghon007.AmorousTestMod.Stickman1",
+					"TrueID": 4,
+					"FalseID": 2,
+					"ID": 1,
+					"NextID": 0,
+					"DebugID": 1
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "Have you noticed that there's no shadow below me? That's because almost all shadows are \"baked\" into the background texture.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 2,
+					"NextID": 3,
+					"DebugID": 2
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.SetFlagEventData, Amorous.Engine",
+					"Flag": "araghon007.AmorousTestMod.Stickman1",
+					"Value": true,
+					"ID": 3,
+					"NextID": 0,
+					"DebugID": 3
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.ConditionalBranchEventData, Amorous.Engine",
+					"Flag": "araghon007.AmorousTestMod.Stickman2",
+					"TrueID": 7,
+					"FalseID": 5,
+					"ID": 4,
+					"NextID": 0,
+					"DebugID": 4
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "Go click on the guy in the lobby to test changing click actions, changing hitboxes and showing a message window.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 5,
+					"NextID": 6,
+					"DebugID": 5
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.SetFlagEventData, Amorous.Engine",
+					"Flag": "araghon007.AmorousTestMod.Stickman2",
+					"Value": true,
+					"ID": 6,
+					"NextID": 0,
+					"DebugID": 6
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.ConditionalBranchEventData, Amorous.Engine",
+					"Flag": "araghon007.AmorousTestMod.Stickman3",
+					"TrueID": 10,
+					"FalseID": 8,
+					"ID": 7,
+					"NextID": 0,
+					"DebugID": 7
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "I may or may not be working on a multiplayer mod. You may never find out.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 8,
+					"NextID": 9,
+					"DebugID": 8
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.SetFlagEventData, Amorous.Engine",
+					"Flag": "araghon007.AmorousTestMod.Stickman3",
+					"Value": true,
+					"ID": 9,
+					"NextID": 0,
+					"DebugID": 9
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.ConditionalBranchEventData, Amorous.Engine",
+					"Flag": "araghon007.AmorousTestMod.Stickman4",
+					"TrueID": 13,
+					"FalseID": 11,
+					"ID": 10,
+					"NextID": 0,
+					"DebugID": 10
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "I am, in fact, gay.░░ And also taken.░░░░ So don't even try.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 11,
+					"NextID": 12,
+					"DebugID": 11
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.SetFlagEventData, Amorous.Engine",
+					"Flag": "araghon007.AmorousTestMod.Stickman4",
+					"Value": true,
+					"ID": 12,
+					"NextID": 0,
+					"DebugID": 12
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.ConditionalBranchEventData, Amorous.Engine",
+					"Flag": "araghon007.AmorousTestMod.Stickman5",
+					"TrueID": 16,
+					"FalseID": 14,
+					"ID": 13,
+					"NextID": 0,
+					"DebugID": 13
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "Enough quotes.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 14,
+					"NextID": 15,
+					"DebugID": 14
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.SetFlagEventData, Amorous.Engine",
+					"Flag": "araghon007.AmorousTestMod.Stickman5",
+					"Value": true,
+					"ID": 15,
+					"NextID": 0,
+					"DebugID": 15
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.ConditionalBranchEventData, Amorous.Engine",
+					"Flag": "araghon007.AmorousTestMod.Stickman6",
+					"TrueID": 19,
+					"FalseID": 17,
+					"ID": 16,
+					"NextID": 0,
+					"DebugID": 16
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "If you ask me nicely, I might give you a decompiled version of Amorous.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 17,
+					"NextID": 18,
+					"DebugID": 17
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.SetFlagEventData, Amorous.Engine",
+					"Flag": "araghon007.AmorousTestMod.Stickman6",
+					"Value": true,
+					"ID": 18,
+					"NextID": 0,
+					"DebugID": 18
+				},
+				{
+					"$type": "Amorous.Engine.Data.Cutscenes.PlayDialogueEventData, Amorous.Engine",
+					"Text": "Alright, seriously, enough for now.",
+					"Title": "Stickman",
+					"Color": {
+						"B": 92,
+						"G": 143,
+						"R": 28,
+						"A": 255
+					},
+					"ID": 19,
+					"NextID": 0,
+					"DebugID": 19
+				},
+			]
+		}
+	]
+}
