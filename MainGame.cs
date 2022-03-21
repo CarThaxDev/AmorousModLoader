@@ -4,6 +4,7 @@
 // MVID: B3839EFC-669C-411A-A58C-5C56D8B36777
 // Assembly location: C:\Users\demon\Downloads\amorous\amorous\amorous\Amorous.Game.Mod.Windows.exe
 
+using System;
 using Amorous.Mod;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -15,30 +16,35 @@ public class MainGame : Game
 
   public MainGame(bool safeMode)
   {
-    /*GraphicsDeviceManager graphicsDeviceManager;
+    /*
+    GraphicsDeviceManager graphicsDeviceManager = new GraphicsDeviceManager(this);
     if (!safeMode)
     {
       DisplayMode currentDisplayMode = GraphicsAdapter.DefaultAdapter.CurrentDisplayMode;
-      graphicsDeviceManager = new GraphicsDeviceManager((Game) this)
-      {
-        IsFullScreen = true,
-        PreferredBackBufferWidth = currentDisplayMode.Width,
-        PreferredBackBufferHeight = currentDisplayMode.Height,
-        SynchronizeWithVerticalRetrace = true
-      };
+      graphicsDeviceManager.IsFullScreen = true;
+      graphicsDeviceManager.PreferredBackBufferHeight = currentDisplayMode.Height;
+      graphicsDeviceManager.PreferredBackBufferWidth = currentDisplayMode.Width;
+      graphicsDeviceManager.SynchronizeWithVerticalRetrace = true;
     }
     else
-      graphicsDeviceManager = new GraphicsDeviceManager((Game) this)
-      {
-        IsFullScreen = false,
-        PreferredBackBufferWidth = 1024,
-        PreferredBackBufferHeight = 768,
-        SynchronizeWithVerticalRetrace = true
-      };
-      */
-    this.Window.Title = "Amorous v1.0.3 (Windows, Modded)";
+    {
+      graphicsDeviceManager.IsFullScreen = false;
+      graphicsDeviceManager.PreferredBackBufferHeight = 768;
+      graphicsDeviceManager.PreferredBackBufferWidth = 1024;
+      graphicsDeviceManager.SynchronizeWithVerticalRetrace = true;
+    }
+  */
+    this.Window.Title = "Amorous v1.0.4 (Windows, Modded)";
     this.Content.RootDirectory = "Content";
-    this._gameInstance = (_JbeCmOie0phb2cbgG6DdGZrbs3pB) new _bj8iyyk84DtxcxcHgAHHFGgq8oN(this, !safeMode);
+    try
+    {
+      this._gameInstance = (_JbeCmOie0phb2cbgG6DdGZrbs3pB) new _bj8iyyk84DtxcxcHgAHHFGgq8oN(this, safeMode);
+    }
+    catch (ArgumentException e)
+    {
+      // ignored
+    }
+
     this._modLoader = new ModLoader((Game) this, this._gameInstance);
   }
 

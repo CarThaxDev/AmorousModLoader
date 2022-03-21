@@ -2,7 +2,6 @@ C:\Users\demon\Downloads\amorous\amorous\amorous\ModLoader\WIP\Amorous.Game.Mod.
 C:\Users\demon\Downloads\amorous\amorous\amorous\ModLoader\WIP\Amorous.Game.Mod.Windows\Amorous.Game.Mod.Windows\bin\Debug\Amorous.Game.Mod.Windows.pdb
 C:\Users\demon\Downloads\amorous\amorous\amorous\ModLoader\WIP\Amorous.Game.Mod.Windows\Amorous.Game.Mod.Windows\bin\Debug\Amorous.Engine.dll
 C:\Users\demon\Downloads\amorous\amorous\amorous\ModLoader\WIP\Amorous.Game.Mod.Windows\Amorous.Game.Mod.Windows\bin\Debug\Amorous.Game.dll
-C:\Users\demon\Downloads\amorous\amorous\amorous\ModLoader\WIP\Amorous.Game.Mod.Windows\Amorous.Game.Mod.Windows\bin\Debug\Amorous.Mod.dll
 C:\Users\demon\Downloads\amorous\amorous\amorous\ModLoader\WIP\Amorous.Game.Mod.Windows\Amorous.Game.Mod.Windows\bin\Debug\FNA.dll
 C:\Users\demon\Downloads\amorous\amorous\amorous\ModLoader\WIP\Amorous.Game.Mod.Windows\Amorous.Game.Mod.Windows\bin\Debug\Spine.dll
 C:\Users\demon\Downloads\amorous\amorous\amorous\ModLoader\WIP\Amorous.Game.Mod.Windows\Amorous.Game.Mod.Windows\bin\Debug\Squid.dll
