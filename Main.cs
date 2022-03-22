@@ -7,6 +7,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using Amorous.Game.NPC;
 using Amorous.Game.Scenes;
@@ -69,7 +70,7 @@ namespace araghon007.AmorousTestMod
 				foreach (_ujAkjlfN5TywwbLAUDzPvtab6uJ hClNIa2MAAqcV9tfVNkRq6Q9UNy in _assets)
 				{
 					LogHelper.LogInfo("1");
-					vector.Y += 40f;
+					vector.Y += 200f;
 					LogHelper.LogInfo("2");
 					spriteBatch._FY70IFLoBond3ORPe0ndCLvIeVcA(spriteFont,
 						"DevMode Test", vector, Color.Red);
@@ -78,7 +79,7 @@ namespace araghon007.AmorousTestMod
 				}
 				foreach (_QGGOTxZ8aNWGh0hc26wcmx8wmwT up4orz9jE5L118EdoBiV8uL9I5b in npcs)
 				{
-					vector.Y += 40f;
+					vector.Y += 200f;
 					LogHelper.LogInfo("4");
 					spriteBatch._FY70IFLoBond3ORPe0ndCLvIeVcA(spriteFont, "DevMode Test 2", vector, Color.Red);
 				}
@@ -167,11 +168,11 @@ namespace araghon007.AmorousTestMod
 					._e6KgAy4CTN1JFYwA88grvAEmDxX(ModLoader.Instance.GameInstance._RbWJ7YGnYHCSoD44MRW1h5X6E7E
 						._U7CeYBJ1v1SoUxpX8emsQ9mWl5b);
 				//this.TestHit(point,
-					//ModLoader.Instance.GameInstance._XbOXR6AypLIdJ3gBMGseGi3Wi2i._quUC3a4OhsceDfLxPlEs4hmM7Nq());
+				//ModLoader.Instance.GameInstance._XbOXR6AypLIdJ3gBMGseGi3Wi2i._quUC3a4OhsceDfLxPlEs4hmM7Nq());
 				if (!test2 && InputHelper.IsDown(Keys.LeftControl) &&
 				    InputHelper.WasPressed((_PMeRYZJaBCqgB9uADJFP3c14lxq) 2))
 				{
-					
+
 					test2 = true;
 					/*
 					_QGGOTxZ8aNWGh0hc26wcmx8wmwT up4orz9jE5L118EdoBiV8uL9I5b =
@@ -199,7 +200,7 @@ namespace araghon007.AmorousTestMod
 					LogHelper.LogWarn("Again, dev mode DOES NOT WORK");
 				}
 				else if (!test2 && InputHelper.WasPressed((_PMeRYZJaBCqgB9uADJFP3c14lxq) 2))
-				         
+
 				{
 					LogHelper.LogInfo("ShowThing");
 					MouseState state = Mouse.GetState();
@@ -239,15 +240,14 @@ namespace araghon007.AmorousTestMod
 						num = 2400f;
 					}
 
-					/*
+
 					_QGGOTxZ8aNWGh0hc26wcmx8wmwT up4orz9jE5L118EdoBiV8uL9I5b2 =
-						this.npcs.LastOrDefault<_QGGOTxZ8aNWGh0hc26wcmx8wmwT>();
+						this.npcs.LastOrDefault();
 					if (up4orz9jE5L118EdoBiV8uL9I5b2 != null)
 					{
 						_QGGOTxZ8aNWGh0hc26wcmx8wmwT up4orz9jE5L118EdoBiV8uL9I5b3 = up4orz9jE5L118EdoBiV8uL9I5b2;
-						up4orz9jE5L118EdoBiV8uL9I5b3._qpNwBP6du6M5AjsR0HHSMWdklJj(
-							up4orz9jE5L118EdoBiV8uL9I5b3._83t30IhBGJYeWKtrIbO2IQqGMfW() +
-							(float) (this.mouseState.ScrollWheelValue - this.previousMouseState.ScrollWheelValue) / num);
+						up4orz9jE5L118EdoBiV8uL9I5b3._fO7gSlrDDNMoHR4FO5QXAq8fUyA += (float) (this.mouseState.ScrollWheelValue - this.previousMouseState.ScrollWheelValue) /
+							num;
 					}
 					else
 					{
@@ -255,12 +255,12 @@ namespace araghon007.AmorousTestMod
 							this._assets.LastOrDefault<_ujAkjlfN5TywwbLAUDzPvtab6uJ>();
 						if (hClNIa2MAAqcV9tfVNkRq6Q9UNy2 != null)
 						{
-							hClNIa2MAAqcV9tfVNkRq6Q9UNy2._uhxWyFiALVSwPgZW757OrPVuCzP +=
-								(float) (this.mouseState.ScrollWheelValue - this.previousMouseState.ScrollWheelValue) / num;
+							hClNIa2MAAqcV9tfVNkRq6Q9UNy2._fO7gSlrDDNMoHR4FO5QXAq8fUyA +=
+								(float) (this.mouseState.ScrollWheelValue - this.previousMouseState.ScrollWheelValue) /
+								num;
 						}
 					}
-				}
-				*/
+
 					LogHelper.LogWarn("Again, DevMode DOES NOT WORK");
 				}
 
@@ -279,16 +279,14 @@ namespace araghon007.AmorousTestMod
 						Microsoft.Xna.Framework.Point point2 = ModLoader.Instance.GameInstance._vsceSzSIjBy2nZrCxAzKZbUiwLq
 							._e6KgAy4CTN1JFYwA88grvAEmDxX(ModLoader.Instance.GameInstance._RbWJ7YGnYHCSoD44MRW1h5X6E7E
 								._U7CeYBJ1v1SoUxpX8emsQ9mWl5b);
-						_QGGOTxZ8aNWGh0hc26wcmx8wmwT up4orz9jE5L118EdoBiV8uL9I5b4 =
-							this.obj.Item1 as _QGGOTxZ8aNWGh0hc26wcmx8wmwT;
-						if (up4orz9jE5L118EdoBiV8uL9I5b4 != null)
+						if (this.obj.Item1 is _QGGOTxZ8aNWGh0hc26wcmx8wmwT up4orz9jE5L118EdoBiV8uL9I5b4)
 						{
 							up4orz9jE5L118EdoBiV8uL9I5b4.GetType().GetMethod("_PdRLTpsImBScBFQhILtCHJpcsllA", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(this,new Object[1]
 							{
-								point2.X + this.obj.Item2.X;
+								point2.X + this.obj.Item2.X
 							});
 							// up4orz9jE5L118EdoBiV8uL9I5b4._PdRLTpsImBScBFQhILtCHJpcsllA((float) point2.X + this.obj.Item2.X);
-							up4orz9jE5L118EdoBiV8uL9I5b4._loAL5ifnD5oZdNHb7JwpsEKbYFU((float) point2.Y + this.obj.Item2.Y);
+							up4orz9jE5L118EdoBiV8uL9I5b4._loAL5ifnD5oZdNHb7JwpsEKbYFU(point2.Y + this.obj.Item2.Y);
 							return;
 						}
 	
@@ -296,7 +294,10 @@ namespace araghon007.AmorousTestMod
 							this.obj.Item1 as _ujAkjlfN5TywwbLAUDzPvtab6uJ;
 						if (hClNIa2MAAqcV9tfVNkRq6Q9UNy3 != null)
 						{
-							hClNIa2MAAqcV9tfVNkRq6Q9UNy3._jPMCvEFnadKmsbfMQxUizyhdszb((float) point2.X + this.obj.Item2.X);
+							hClNIa2MAAqcV9tfVNkRq6Q9UNy3.GetType().GetMethod("_PdRLTpsImBScBFQhILtCHJpcsllA", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(this,new Object[1]
+							{
+								point2.X + this.obj.Item2.X
+							});
 							hClNIa2MAAqcV9tfVNkRq6Q9UNy3._loAL5ifnD5oZdNHb7JwpsEKbYFU((float) point2.Y + this.obj.Item2.Y);
 						}
 						*/

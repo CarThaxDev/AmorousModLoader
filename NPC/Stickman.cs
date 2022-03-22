@@ -4,8 +4,10 @@
 // MVID: 2CA59860-14AD-4237-B2C6-BB1163EEC49A
 // Assembly location: C:\Users\demon\Downloads\amorous\amorous\amorous\Content-Mods\AmorousTestMod.dll
 
+using System.Linq.Expressions;
 using Amorous.Engine.NPC;
 using Amorous.Mod;
+using Amorous.Mod.Helpers;
 using Amorous.Mod.NPC;
 
 namespace araghon007.AmorousTestMod.NPC
@@ -47,27 +49,30 @@ namespace araghon007.AmorousTestMod.NPC
 
     public override void _nGGBtYpZ8pI1BmE2c2ke63UjGDP(NPCLocation location)
     {
+      LogHelper.LogInfo($"New NPCLocation for Stickman is {location.ToString()}");
       base._nGGBtYpZ8pI1BmE2c2ke63UjGDP(location);
-      switch (location - 1)
+      switch (location)
       {
         case NPCLocation.Middle:
           this.Size = 1f;
           this.Flip = true;
-          this.X = 240f; //  ModLoader.Instance.GameInstance._8k7Do3TGW5NrB22zl8QzInP2j7k.ClientBounds.Width/2
-          this.Y = 50; //  ModLoader.Instance.GameInstance._8k7Do3TGW5NrB22zl8QzInP2j7k.ClientBounds.Height/2;
-          break;
+          this.X = 240f;
+          this.Y = 50f;
+          return;
         case NPCLocation.Left:
           this.Size = 0.85f;
           this.Flip = true;
           this.X = -300f;
           this.Y = 50f;
-          break;
+          return;
         case NPCLocation.Right:
           this.Size = 0.85f;
           this.Flip = false;
           this.X = 990f;
           this.Y = 50f;
-          break;
+          return;
+        default:
+          return;
       }
     }
 
