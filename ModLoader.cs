@@ -83,6 +83,11 @@ namespace Amorous.Mod
       this._modList = new List<IModBase>();
       this._npcList = new List<Type>();
       string str = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Content-Mods");
+      if (!Directory.Exists(str))
+      {
+        Directory.CreateDirectory(str);
+      }
+
       LogHelper.LogInfo(str);
       foreach (string file in Directory.GetFiles(str, "*.dll", SearchOption.TopDirectoryOnly))
       {
