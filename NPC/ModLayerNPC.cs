@@ -34,15 +34,15 @@ namespace Amorous.Mod.NPC
     /// <summary>X position</summary>
     public float X
     {
-      get => ((_QGGOTxZ8aNWGh0hc26wcmx8wmwT) this)._7Xn1C5tjYnmIif1iZKV8AWsEEbL;
-      set => ((_QGGOTxZ8aNWGh0hc26wcmx8wmwT) this)._7Xn1C5tjYnmIif1iZKV8AWsEEbL = value;
+      get => base._7Xn1C5tjYnmIif1iZKV8AWsEEbL;
+      set => base._7Xn1C5tjYnmIif1iZKV8AWsEEbL = value;
     }
 
     /// <summary>Y position</summary>
     public float Y
     {
-      get => ((_QGGOTxZ8aNWGh0hc26wcmx8wmwT) this)._bCjZ3VSXGKyhmykd2zCnQBiSpDf;
-      set => ((_QGGOTxZ8aNWGh0hc26wcmx8wmwT) this)._bCjZ3VSXGKyhmykd2zCnQBiSpDf = value;
+      get => base._bCjZ3VSXGKyhmykd2zCnQBiSpDf;
+      set => base._bCjZ3VSXGKyhmykd2zCnQBiSpDf = value;
     }
 
     /// <summary>Whether or not should the NPC be flipped</summary>
@@ -165,9 +165,9 @@ namespace Amorous.Mod.NPC
     /// <example>
     /// Use a switch statement to change values for specific locations:
     /// <code>
-    /// public override void _obvu1L6KrxGqH1z2XacOoFxfneg(NPCLocation location)
+    /// public override void _nGGBtYpZ8pI1BmE2c2ke63UjGDP(NPCLocation location)
     /// {
-    ///     base._obvu1L6KrxGqH1z2XacOoFxfneg(location);
+    ///     base._nGGBtYpZ8pI1BmE2c2ke63UjGDP(location);
     ///     switch (location)
     ///     {
     ///         case NPCLocation.Middle:
